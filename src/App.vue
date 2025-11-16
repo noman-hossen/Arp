@@ -1,14 +1,16 @@
 <template>
   <Nav />
   <Thank />
+  <Letter />
 </template>
 
 <script>
 import Nav from './components/Nav.vue'
 import Thank from './components/Thank.vue'
+import Letter from './components/Letter.vue'
 
 export default {
-  components: { Nav, Thank },
+  components: { Nav, Thank, Letter },
   name: 'App',
 }
 </script>

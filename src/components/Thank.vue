@@ -9,9 +9,9 @@
 
     <!-- 💖 Foreground Message -->
     <section class="message">
-      <h1 class="thank-text">Thank You, Bestie! 💕</h1>
-      <p class="subtext">You're my favorite kind of magic 🌷</p>
-      <button @click="scrollToGallery" class="btn">View Our Memories 📸</button>
+      <h1 class="thank-text">Thank You, Medam! 💕</h1>
+      <p class="subtext">I love you so much... 🌷</p>
+      <button @click="scrollToGallery" class="btn">Memories 📸</button>
     </section>
 
     <!-- 💞 Floating Hearts (always visible) -->
@@ -69,16 +69,16 @@ const scrollToGallery = () => {
 }
 
 /* Add your real photos here! */
-const photos = [
-  'https://source.unsplash.com/random/600x600?friends',
-  'https://source.unsplash.com/random/600x600?smile',
-  'https://source.unsplash.com/random/600x600?fun',
-  'https://source.unsplash.com/random/600x600?travel',
-  'https://source.unsplash.com/random/600x600?coffee',
-  'https://source.unsplash.com/random/600x600?beach',
-  'https://source.unsplash.com/random/600x600?selfie',
-  'https://source.unsplash.com/random/600x600?sunset',
-]
+import img1 from '../img/i1.jpg'
+import img2 from '../img/i2.jpg'
+import img3 from '../img/i3.jpg'
+import img4 from '../img/i4.jpg'
+import img5 from '../img/i5.jpg'
+import img6 from '../img/i6.jpg'
+import img7 from '../img/i7.jpg'
+import img8 from '../img/i8.jpg'
+
+const photos = [img1, img2, img3, img4, img5, img6, img7, img8]
 </script>
 
 <style scoped>
@@ -165,7 +165,6 @@ const photos = [
 }
 .btn {
   margin-top: 1.5rem;
-  background-color: #ffb6c1;
   color: white;
   border: none;
   padding: 0.8rem 1.5rem;
@@ -174,9 +173,10 @@ const photos = [
   transition: all 0.3s ease;
   font-size: 1rem;
   box-shadow: 0 4px 10px rgba(255, 182, 193, 0.5);
+  background-color: #ff66b2;
 }
 .btn:hover {
-  background-color: #ff66b2;
+  background-color: #ffb6c1;
   transform: scale(1.05);
 }
 

@@ -11,6 +11,7 @@ import { ref } from 'vue'
 import ThankYouMessage from './ThankYouMessage.vue'
 import PhotoGrid from './PhotoGrid.vue'
 import FloatingHearts from './FloatingHearts.vue'
+import Letter from './Letter.vue'
 
 /* 🌸 SVG Flower */
 const flowerSVG = `
@@ -33,6 +34,7 @@ const hearts = Array.from({ length: 20 }).map((_, i) => ({
 
 /* 📸 Gallery */
 const gallerySection = ref(null)
+
 const scrollToGallery = () => {
   gallerySection.value.scrollIntoView({ behavior: 'smooth' })
 }
